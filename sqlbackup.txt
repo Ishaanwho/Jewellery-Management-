@@ -1,0 +1,44 @@
+mysql> desc records;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| name     | varchar(20) | NO   | PRI |         |       |
+| address  | varchar(30) | YES  |     | NULL    |       |
+| email    | varchar(40) | YES  |     | NULL    |       |
+| phone    | varchar(10) | YES  |     | NULL    |       |
+| password | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+mysql> desc sales;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| cust_name | varchar(20) | YES  |     | NULL    |       |
+| dop       | date        | YES  |     | NULL    |       |
+| payment   | varchar(20) | YES  |     | NULL    |       |
+| amount    | int(11)     | YES  |     | NULL    |       |
+| invoiceno | int(11)     | NO   | PRI | 0       |       |
++-----------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> desc sales1;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| sno       | int(11)     | NO   | PRI | 0       |       |
+| invoiceno | int(11)     | YES  |     | NULL    |       |
+| item      | varchar(20) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc jewel;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| Sno      | char(5)     | NO   | PRI |         |       |
+| Item     | varchar(20) | YES  |     | NULL    |       |
+| Material | varchar(20) | YES  |     | NULL    |       |
+| Price    | int(11)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
